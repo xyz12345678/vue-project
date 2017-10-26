@@ -6,6 +6,9 @@
 const path = require('path')
 
 module.exports = {
+  common: {
+    resourcePath: path.join(__dirname, '../app/resource')
+  },
   build: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
